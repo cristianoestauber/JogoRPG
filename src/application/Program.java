@@ -7,23 +7,31 @@ public class Program extends JFrame {
 
     public static void main(String[] args) {
 
-        JFrame janela = new JFrame();
+        JFrame janelaPrincipal = new JFrame("Primeiro Jogo");
 
         JPanel painel = new JPanel();
-        janela.add(painel);
+        janelaPrincipal.add(painel);
+        painel.setLayout(null);
 
-        JButton botao = new JButton("Button 1");
-        painel.add(botao);
-        JButton botao2 = new JButton("Button 2");
-        painel.add(botao2);
-        JButton botao3 = new JButton("Button 3");
-        painel.add(botao3);
-        JButton botao4 = new JButton("Button 4");
-        painel.add(botao4);
+        JButton botaoAtacar = new JButton("Atacar");
+        painel.add(botaoAtacar);
+        botaoAtacar.setBounds(15, 192, 90, 25);
 
-        janela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        janela.setBounds(150, 35, 250, 350);
-        janela.setVisible(true);
+        JButton botaoDefender = new JButton("Defender");
+        painel.add(botaoDefender);
+        botaoDefender.setBounds(110, 192, 90, 25);
+
+        JButton botaoMagia = new JButton("Magias");
+        painel.add(botaoMagia);
+        botaoMagia.setBounds(15, 220, 90, 25);
+
+        JButton botaoItens = new JButton("Itens");
+        painel.add(botaoItens);
+        botaoItens.setBounds(110, 220, 90, 25);
+
+        janelaPrincipal.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        janelaPrincipal.setBounds(150, 35, 232, 300);
+        janelaPrincipal.setVisible(true);
 
     }
 }
