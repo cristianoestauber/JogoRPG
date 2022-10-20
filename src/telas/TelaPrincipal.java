@@ -1,16 +1,14 @@
-package application;
-
+package telas;
 
 import javax.swing.*;
 
-public class Program extends JFrame {
+public class TelaPrincipal extends JFrame {
 
-    public static void main(String[] args) {
-
-        JFrame janelaPrincipal = new JFrame("Primeiro Jogo");
+    public TelaPrincipal(){
+        super("Primeiro Jogo");
 
         JPanel painel = new JPanel();
-        janelaPrincipal.add(painel);
+        this.add(painel);
         painel.setLayout(null);
 
         JButton botaoAtacar = new JButton("Atacar");
@@ -29,9 +27,8 @@ public class Program extends JFrame {
         painel.add(botaoItens);
         botaoItens.setBounds(110, 220, 90, 25);
 
-        janelaPrincipal.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        janelaPrincipal.setBounds(150, 35, 232, 300);
-        janelaPrincipal.setVisible(true);
-
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.setBounds(150, 35, 232, 300);
+        this.setVisible(true);
     }
 }
