@@ -3,6 +3,7 @@ package telas;
 import telas.layout.LayoutStatus;
 
 import javax.swing.*;
+import java.awt.*;
 
 public class TelaPrincipal extends JFrame {
 
@@ -14,7 +15,9 @@ public class TelaPrincipal extends JFrame {
         painel.setLayout(null);
 
         LayoutStatus status = new LayoutStatus();
+        status.setBounds(8, 10, 200, 50);
         painel.add(status);
+        status.setBackground(Color.ORANGE);
 
 
         JButton botaoAtacar = new JButton("Atacar");
