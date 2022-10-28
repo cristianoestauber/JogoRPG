@@ -1,12 +1,18 @@
-package personagens;
+package personagens.inimigos;
 
-public class Inimigos extends Personagem{
+import personagens.Personagem;
+import personagens.Racas;
+
+public abstract class Inimigo extends Personagem {
 
     private int xpGanho;
+    public Inimigo() {
+
+    }
 
     //falta lista de loot (NAO ESQUECER)
 
-    public Inimigos(Racas racas){
+    public Inimigo(Racas racas){
         switch (racas){
             case ZUMBI:
                 System.out.println("Zumbi");
@@ -26,19 +32,6 @@ public class Inimigos extends Personagem{
         }
     }
 
-    @Override
-    public void atacar(){
 
-    };
-
-    @Override
-    public void defender(){
-
-    };
-
-    @Override
-    public void usarMagia(){
-
-    };
 
 }
