@@ -1,7 +1,5 @@
 package personagens.inimigos;
 
-import personagens.Racas;
-
 public final class FabricaInimigos {
     public static Inimigo retornarInimigo(Racas racas) {
         Inimigo retorno = null;

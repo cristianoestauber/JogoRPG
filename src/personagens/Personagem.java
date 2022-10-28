@@ -1,5 +1,7 @@
 package personagens;
 
+import personagens.inimigos.Racas;
+
 public abstract class Personagem {
 
     String nome;

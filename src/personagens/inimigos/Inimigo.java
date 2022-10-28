@@ -1,7 +1,6 @@
 package personagens.inimigos;
 
 import personagens.Personagem;
-import personagens.Racas;
 
 public abstract class Inimigo extends Personagem {
 
