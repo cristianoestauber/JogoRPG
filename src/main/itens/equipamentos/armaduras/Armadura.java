@@ -9,5 +9,11 @@ public abstract class Armadura extends Equipamento {
         this.tipoArmaduras = tipoArmaduras;
     }
 
+    public TipoArmaduras getTipoArmaduras() {
+        return tipoArmaduras;
+    }
 
+    public void setTipoArmaduras(TipoArmaduras tipoArmaduras) {
+        this.tipoArmaduras = tipoArmaduras;
+    }
 }

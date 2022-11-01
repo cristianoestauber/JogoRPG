@@ -9,4 +9,12 @@ public abstract class Armas extends Equipamento {
     public Armas(TipoArmas tipoArmas){
         this.tipoArmas = tipoArmas;
     }
+
+    public TipoArmas getTipoArmas() {
+        return tipoArmas;
+    }
+
+    public void setTipoArmas(TipoArmas tipoArmas) {
+        this.tipoArmas = tipoArmas;
+    }
 }

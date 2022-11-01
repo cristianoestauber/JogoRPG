@@ -2,7 +2,7 @@ package personagens.inimigos;
 
 public class Goblin extends Inimigo {
     public Goblin() {
-        System.out.println("Goblin Criado");
+        super(Racas.GOBLIN);
     }
         @Override
         public void atacar () {

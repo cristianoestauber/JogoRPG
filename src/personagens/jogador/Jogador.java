@@ -1,5 +1,6 @@
 package personagens.jogador;
 
+import atributos.personagem.jogador.AtributosJogador;
 import main.itens.equipamentos.armaduras.Peito;
 import main.itens.equipamentos.armaduras.Bota;
 import main.itens.equipamentos.armaduras.Elmo;
@@ -9,17 +10,14 @@ import personagens.jogador.classes.TiposClasses;
 
 public abstract class Jogador extends Personagem {
 
-    private int pontosMana;
-    private int xpAtual;
-    private int xpProximo;
+    private AtributosJogador atributosJogador;
+
     private TiposClasses classes;
 
     private Elmo elmo;
     private Peito peito;
     private Luva luva;
     private Bota bota;
-
-
 
 
     public Jogador(){
@@ -45,28 +43,12 @@ public abstract class Jogador extends Personagem {
 
     };
 
-    public int getPontosMana() {
-        return pontosMana;
+    public AtributosJogador getAtributosJogador() {
+        return atributosJogador;
     }
 
-    public void setPontosMana(int pontosMana) {
-        this.pontosMana = pontosMana;
-    }
-
-    public int getXpAtual() {
-        return xpAtual;
-    }
-
-    public void setXpAtual(int xpAtual) {
-        this.xpAtual = xpAtual;
-    }
-
-    public int getXpProximo() {
-        return xpProximo;
-    }
-
-    public void setXpProximo(int xpProximo) {
-        this.xpProximo = xpProximo;
+    public void setAtributosJogador(AtributosJogador atributosJogador) {
+        this.atributosJogador = atributosJogador;
     }
 
     public TiposClasses getClasses() {

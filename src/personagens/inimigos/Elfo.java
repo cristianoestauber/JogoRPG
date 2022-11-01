@@ -2,7 +2,7 @@ package personagens.inimigos;
 
 public class Elfo extends Inimigo {
     public Elfo() {
-        System.out.println("Elfo Criado");
+        super(Racas.ELFO);
     }
 
         @Override

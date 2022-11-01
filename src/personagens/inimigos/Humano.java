@@ -2,7 +2,7 @@ package personagens.inimigos;
 
 public class Humano extends Inimigo {
     public Humano() {
-        System.out.println("Humano Criado");
+        super(Racas.HUMANO);
     }
         @Override
         public void atacar () {
